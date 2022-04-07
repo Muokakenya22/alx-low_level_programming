@@ -1,10 +1,9 @@
+// C program to show how to use puts
 #include <stdio.h>
-#include <string.h>
-
 int main()
 {
-	char string["Programming is like building a multilingual puzzle];
-	strcpy(str,"This is q4");
-	puts(string);
+	puts(""Programming is like building a multilingual puzzle");
+
+	getchar();
 	return 0;
 }
