@@ -1,4 +1,3 @@
-/*C program to show how to use puts*/
 #include <stdio.h>
 int main()
 {
