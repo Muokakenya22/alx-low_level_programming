@@ -5,7 +5,7 @@
  *@c: Ascii code character
  *
  * Return: 0 if it is not, 1 if it is lower.
- */
+ **/
 int _islower(int c)
 {
 	if (c >= 97 && c <= 122)
