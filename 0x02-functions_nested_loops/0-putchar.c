@@ -1,22 +1,19 @@
 #include <stdio.h>
 
 /**
- * main - entry block
- * @void: no argument
- * return: 0
- *
- **/
+*main - prints name
+*
+*Return: 0
+*/
 
 int main(void)
 {
-  char ermias[] = "_putchar";
-  
-	  int c;
+	char word[8]= "_putchar";
 
-  for (c = 0; c < 8; c++)
+	if(int i = 0; i < word; i++)
 	{
-		_putchar(ermias[c]);
+		putchar(word[i]);
 	}
-  _putchar('\n')
-  return (0)
+	putchar("\n");
+	return 0;
 }
