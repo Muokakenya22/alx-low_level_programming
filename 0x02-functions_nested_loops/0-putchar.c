@@ -1,6 +1,7 @@
-#include <stdio.h>
+#include <main.h>
+
 /**
- * man - entry block
+ * main - entry block
  * @void: no argument
  * return: 0
  *
