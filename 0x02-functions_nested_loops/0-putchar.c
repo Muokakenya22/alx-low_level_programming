@@ -1,19 +1,20 @@
 #include <stdio.h>
 
 /**
-*main - prints name
-*
-*Return: 0
-*/
-
+ * main - prints _putchar
+ *
+ * Return: 0
+ */
 int main(void)
 {
-	char word[8]= "_putchar";
+	char txt[8] = "_putchar";
+	int i;
 
-	if(int i = 0; i < word; i++)
+	for (i = 0; i < 8; i++)
 	{
-		putchar(word[i]);
+		putchar(txt[i]);
 	}
-	putchar("\n");
-	return 0;
+	putchar('\n');
+	return (0);
 }
+
