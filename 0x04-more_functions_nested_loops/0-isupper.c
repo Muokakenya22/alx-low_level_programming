@@ -1,16 +1,15 @@
 #include "main.h"
 
 /**
- * _isupper- printf 1 if c is uppercase 
- * otherwise printf 0
+ * _isupper- detrmines whether a character is upprt or lower case.
+ * @c:character input
+ * Return :1 if upper ,0 if lower.
  *
- *
- * Return: 0
  */
 
 int _isupper(int c)
 {
-	if ("c >= 65, c <=90)
+	if ("c >= 65 $$ c <=90)
 	{
 		return (1);
 	}
