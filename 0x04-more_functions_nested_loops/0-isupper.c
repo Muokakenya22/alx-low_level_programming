@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isupper- detrmines whether a character is upprt or lower case.
+ * _isupper- detrmines whether a character is upper or lower case.
  * @c:character input
  * Return :1 if upper ,0 if lower.
  *
