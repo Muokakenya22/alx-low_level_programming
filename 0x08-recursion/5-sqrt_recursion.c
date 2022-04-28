@@ -35,4 +35,4 @@ int _sqrt_recursion(int n)
 		return (1);
 	return (power(n, 2));
 }
-© 2022 GitHub, Inc.
+
