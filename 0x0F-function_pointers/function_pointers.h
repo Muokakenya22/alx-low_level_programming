@@ -1,8 +1,10 @@
-#ifndef _FUNCTION_POINTERS_
-#define _FUNCTION_POINTERS_
+#ifndef HEADER_MAIN_
+#define HEADER_MAIN_
 
-#include <stdlib.h>
-
+#include <stdio.h>
+char _putchar(char);
 void print_name(char *name, void (*f)(char *));
 void array_iterator(int *array, size_t size, void (*action)(int));
 int int_index(int *array, int size, int (*cmp)(int));
+
+#endif
