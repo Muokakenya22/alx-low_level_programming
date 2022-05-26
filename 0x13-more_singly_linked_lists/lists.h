@@ -1,25 +1,16 @@
-#ifndef LISTS_H_
-#define LISTS_H_
-/**
- * struct list_s - singly linked list
- * @str: string - (malloc'ed string)
- * @len: length of the string
- * @next: points to the next node
- *
- * Description: singly linked list node structure
- */
-typedef struct list_s
-{
-	char *str;
-	unsigned int len;
-	struct list_s *next;
-} list_t;
+#ifndef LISTS_H
+#define LISTS_H
+
+#include <stdlib.h>
+#include <stdio.h>
+
 /**
  * struct listint_s - singly linked list
  * @n: integer
  * @next: points to the next node
  *
  * Description: singly linked list node structure
+ *
  */
 typedef struct listint_s
 {
@@ -27,17 +18,19 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <unistd.h>
-
-char _putchar(char *);
-size_t print_list(const list_t *h);
-size_t list_len(const list_t *h);
-list_t *add_node(list_t **head, const char *str);
-list_t *add_node_end(list_t **head, const char *str);
-void free_list(list_t *head);
-void before_main(void) __attribute__((constructor));
+/**
+ * struct listnode_s - singly linked list
+ * @ptr: address of listint_t
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
+ *
+ */
+typedef struct listnode_s
+{
+	listint_t *ptr;
+	struct listnode_s *next;
+} listnode_t;
 
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
@@ -49,5 +42,13 @@ int pop_listint(listint_t **head);
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 int sum_listint(listint_t *head);
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
+int delete_nodeint_at_index(listint_t **head, unsigned int index);
+listint_t *reverse_listint(listint_t **head);
+listnode_t *add_nodeptr(listnode_t **head, const listint_t *ptr);
+void free_listnode(listnode_t *head);
+int is_in_nodes(listnode_t *head, const listint_t *ptr);
+size_t print_listint_safe(const listint_t *head);
+size_t free_listint_safe(listint_t **h);
+listint_t *find_listint_loop(listint_t *head);
 
 #endif
