@@ -312,5 +312,3 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	close_elf(o);
 	return (0);
 }
-© 2022 GitHub, Inc.
-[A[C[C[C[C[C[C[C[C[C[C[C[C[
