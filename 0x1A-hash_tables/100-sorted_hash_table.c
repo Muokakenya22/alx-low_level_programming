@@ -271,7 +271,3 @@ void shash_table_delete(shash_table_t *ht)
 	free(ht->array);
 	free(ht);
 }
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-[A[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[
